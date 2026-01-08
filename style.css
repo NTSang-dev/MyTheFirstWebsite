@@ -1,14 +1,26 @@
-body{
-    background-image: url(/img/bg.jpg);
+body {
+  background-image: url(/img/bg.jpg);
+}
+/* Hoạt ảnh 1s */
+img {
+  transition: 1s;
 }
 
-h1 {
+/* sau khi checkbox đã check thì độ trong suốt là thấp nhất */
+input:checked ~ img {
+  opacity: 0;
+  /* Dùng display: none nếu muốn biến mất khỏi giao diện */
+  /* Dùng visibility: hidden nếu muốn ẩn khỏi giao diện nhưng vẫn chiếm vị trí */
+}
+
+h1,
+a {
   /* Màu chữ */
-  color: blue;
+  color: green;
   /* Kiểu chữ */
   font-style: italic;
   /* Font chữ */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   /* Viết hoa hoặc thường */
   text-transform: uppercase;
   /* căn lề */
@@ -18,7 +30,8 @@ h1 {
   /* Độ trong suốt */
   opacity: 90%;
 }
-p {
-  color: blueviolet;
+p,
+span {
+  color: white;
   font-size: 22px;
 }
