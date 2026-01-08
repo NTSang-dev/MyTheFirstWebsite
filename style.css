@@ -1,8 +1,24 @@
-h1{
-  color: blue;
-  font-style: italic;
+body{
+    background-image: url(/img/bg.jpg);
 }
-p{
-    color: blueviolet;
-    font-size: 22px;
+
+h1 {
+  /* Màu chữ */
+  color: blue;
+  /* Kiểu chữ */
+  font-style: italic;
+  /* Font chữ */
+  font-family: 'Times New Roman', Times, serif;
+  /* Viết hoa hoặc thường */
+  text-transform: uppercase;
+  /* căn lề */
+  text-align: center;
+  /* Cỡ chữ */
+  font-size: 25px;
+  /* Độ trong suốt */
+  opacity: 90%;
+}
+p {
+  color: blueviolet;
+  font-size: 22px;
 }
